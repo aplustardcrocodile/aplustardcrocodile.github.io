@@ -1,0 +1,68 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+    font-size: 10px;
+}
+
+
+.container {
+    margin: 0 auto;
+    background: repeating-radial-gradient(circle, #ABE7F1, #ABE7F1 20px, #76BFCE 20px, #76BFCE 40px);
+    padding: 5rem;
+    -webkit-animation: 'wee' 15s infinite linear forwards;
+    background-size: 56px 56px;
+    background-position-x: 0px;
+    transition: all 10s linear;
+}
+
+.alessio {
+    background-image: url("../assets/images/face.png");
+    width: 472px;
+    height: 665px;
+    margin: 0 auto;
+    cursor: pointer;
+    display: block;
+}
+
+.alessio.still {
+    background-image: url("../assets/images/face.png");
+    width: 472px;
+    height: 665px;
+    margin: 0 auto;
+}
+
+.alessio.active {
+    background-image: url("../assets/images/face-loop.gif");
+    width: 472px;
+    height: 665px;
+    margin: 0 auto;
+}
+
+
+@-webkit-keyframes 'wee' {
+	0%{
+		background-position-x:0%;
+	}
+	100% {
+		background-position-x:200%;
+	}
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+}
+
+#bottom {
+    margin-top: -665px;
+}
+
+.btn {
+    margin: 0 auto;
+    display: block;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 100%;
+}
