@@ -17,7 +17,7 @@ body {
 }
 
 .alessio {
-    background-image: url(../assets/images/Face.png);
+    background-image: url("../assets/images/face.png");
     width: 472px;
     height: 665px;
     margin: 0 auto;
@@ -26,14 +26,14 @@ body {
 }
 
 .alessio.still {
-    background-image: url(../assets/images/Face.png);
+    background-image: url("../assets/images/face.png");
     width: 472px;
     height: 665px;
     margin: 0 auto;
 }
 
 .alessio.active {
-    background-image: url(../assets/images/Face-loop.gif);
+    background-image: url("../assets/images/face-loop.gif");
     width: 472px;
     height: 665px;
     margin: 0 auto;
@@ -56,9 +56,6 @@ img {
     position: relative;
 }
 
-#bottom {
-    margin-top: -665px;
-}
 
 .btn {
     margin: 0 auto;
