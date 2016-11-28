@@ -54,14 +54,14 @@ transition: transform 1s ease;
 
 
 	#face {
-		background-image: url('https://aplustardcrocodile.github.io/assets/images/Face-loop-small.gif') no-repeat;
+		background-image: url('https://aplustardcrocodile.github.io/assets/images/Face-small.png') no-repeat;
 		background-size: cover;
 		margin: 0 auto;
 		transition: transform .5s ease;
 
 	#face.active {
 		opacity:1;
-		background-image: url('https://aplustardcrocodile.github.io/assets/images/Face-loop.gif') no-repeat;
+		background-image: url('https://aplustardcrocodile.github.io/assets/images/Face-loop-small.gif') no-repeat;
 		background-size: cover;
 		transform: rotateZ(5deg);
 	}
