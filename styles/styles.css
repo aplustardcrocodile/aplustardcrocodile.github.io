@@ -55,6 +55,7 @@ transition: transform 1s ease;
 	#face {
 		background: url('https://aplustardcrocodile.github.io/assets/images/Face-small.png') no-repeat;
 		width: 375px; height: 400px;
+		background-position: center;
 		margin: 0 auto;
 		cursor: pointer;
 		transition: transform .5s ease;
