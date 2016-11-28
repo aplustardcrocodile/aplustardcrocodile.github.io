@@ -50,7 +50,7 @@ transition: transform 1s ease;
 		margin: 0 auto;
 		margin-top: 50px;
 		/*position: relative;*/
-		background: #7DB4B5;
+		background: repeating-radial-gradient(circle, #E0EFF1, #E0EFF1 20px, #7DB4B5 20px, #7DB4B5 40px);
 	}
 
 	#face {
