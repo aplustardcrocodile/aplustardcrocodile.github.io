@@ -39,7 +39,7 @@ body {
 	
 }
 
-@media (min-width: 375px) and (max-width: 667px) {
+@media only screen and (max-width: 500px) {
 	body {
 		padding: 1%;
 		width: 250px;
