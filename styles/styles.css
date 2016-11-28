@@ -1,42 +1,16 @@
+
+@media (min-width: 1000px) {
+
 body {
-    box-sizing: border-box;
-    margin: 0;
-    height: 100%;
-    font-size: 10px;
-}
-
-
-.container {
-    margin: 0 auto;
-    background: repeating-radial-gradient(circle, #ABE7F1, #ABE7F1 20px, #76BFCE 20px, #76BFCE 40px);
-    padding: 5rem;
-    -webkit-animation: 'wee' 15s infinite linear forwards;
-    background-size: 56px 56px;
-    background-position-x: 0px;
-    transition: all 10s linear;
-}
-
-.alessio {
-    background-image: url('https://aplustardcrocodile.github.io/assets/images/Face.png');
-    width: 472px;
-    height: 665px;
-    margin: 0 auto;
-    cursor: pointer;
-    display: block;
-}
-
-.alessio.still {
-    background-image: url('https://aplustardcrocodile.github.io/assets/images/Face.png');
-    width: 472px;
-    height: 665px;
-    margin: 0 auto;
-}
-
-.alessio.active {
-    background-image: url('https://aplustardcrocodile.github.io/assets/images/Face-loop.gif');
-    width: 472px;
-    height: 665px;
-    margin: 0 auto;
+	padding: 1%;
+	width: 472px;
+	margin: 0 auto;
+	position: relative;
+	background: repeating-radial-gradient(circle, #E0EFF1, #E0EFF1 20px, #7DB4B5 20px, #7DB4B5 40px);
+	-webkit-animation: 'wee' 15s infinite linear forwards;
+	background-size: 56px 56px;
+	background-position-x: 0px;
+	transition: all 10s linear;
 }
 
 
@@ -45,21 +19,27 @@ body {
 		background-position-x:0%;
 	}
 	100% {
-		background-position-x:200%;
+		background-position-x:100%;
 	}
 }
 
-img {
-    display: block;
-    margin: 0 auto;
-    z-index: 1;
-    position: relative;
+
+#face {
+	background: url('https://aplustardcrocodile.github.io/assets/images/Face.png') no-repeat;
+	width: 472px; height: 665px;
+	cursor: pointer;
+	transition: transform .5s ease;
+}
+
+#face:hover {
+transition: transform 1s ease;
 }
 
 
-.btn {
-    margin: 0 auto;
-    display: block;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 100%;
+#face.active {
+	opacity:1;
+	background: url('https://aplustardcrocodile.github.io/assets/images/Face-loop.gif') no-repeat;
+	transform: rotateZ(5deg);
+}
+
 }
