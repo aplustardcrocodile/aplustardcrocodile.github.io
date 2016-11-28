@@ -1,5 +1,3 @@
-@media (min-width: 1000px) {
-
 body {
 	padding: 1%;
 	width: 472px;
@@ -30,31 +28,30 @@ body {
 	transition: transform .5s ease;
 }
 
+#face:hover {
+transition: transform 1s ease;
+}
+
 
 #face.active {
 	opacity:1;
 	background: url('https://aplustardcrocodile.github.io/assets/images/Face-loop.gif') no-repeat;
 	transform: rotateZ(5deg);
 }
-	
-}
-@media only screen (min-width: 375px) and (max-width: 667px) {
+
+@media (min-width: 375px) and (max-width: 667px) {
 	body {
 		padding: 1%;
-		width: 250px;
 		margin: 0 auto;
-		position: relative;
-		background-color: #E0EFF1;
+		/*position: relative;*/
+		background: #E0EFF1;
 	}
 
 
 	#face {
 		background-image: url('https://aplustardcrocodile.github.io/assets/images/Face-small.png') no-repeat;
-		background-size: cover;
-		width: 250px; height: 352px;
+		margin: 0 auto;
 		transition: transform .5s ease;
-
-
 
 	#face.active {
 		opacity:1;
