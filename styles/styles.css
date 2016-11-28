@@ -55,21 +55,22 @@ transition: transform 1s ease;
 	#face {
 		background: url('https://aplustardcrocodile.github.io/assets/images/Face-small.png') no-repeat;
 		width: 375px; height: 400px;
-		background-position: center;
 		margin: 0 auto;
 		cursor: pointer;
 		transition: transform .5s ease;
-	}
-
-	#face:hover {
-	transition: transform 1s ease;
+		background-position: center;
+		background-size: contain;
 	}
 
 
 	#face.active {
 		opacity:1;
 		background: url('https://aplustardcrocodile.github.io/assets/images/Face-loop-small.gif') no-repeat;
+		width: 375px; height: 400px;
+		background-size: cover;
 		transform: rotateZ(5deg);
+		background-position: center;
+		background-size: contain;
 	}
 
 	}
