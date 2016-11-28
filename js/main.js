@@ -1,4 +1,4 @@
-var sounds = ["./assets/sounds/01.m4a",
+var audioFiles = ["./assets/sounds/01.m4a",
         "./assets/sounds/02.m4a",
         "./assets/sounds/03.m4a",
         "./assets/sounds/04.m4a",
@@ -20,32 +20,35 @@ var sounds = ["./assets/sounds/01.m4a",
     ],
     oldSounds = [];
 
-var playSounds = function() {
-    var index = Math.floor(Math.random() * (sounds.length)),
-        thisSound = sounds[index];
+var face = $('#face'),
+    audio = $('#audio')[0],
+    isPlaying = false;
 
-    oldSounds.push(thisSound);
-    sounds.splice(index, 1);
+    face.on('click', function() {
+        if ( !isPlaying ) {
+            isPlaying = true;
 
-    if (sounds.length < 1) {
-        sounds = oldSounds.splice(0, oldSounds.length);
-    }
+            //toggle class to change image
+            $(this).toggleClass('active');
 
-    $("#element").html("<embed src=\"" + thisSound + "\" hidden=\"true\" autostart=\"true\" />");
-    // have just one image instead and replace it in jquery with gif using background-image source
+            //get random files from library
+            var currentAudio = audioFiles[Math.floor(Math.random() * audioFiles.length)];
 
-    // $("#face").css("background-image", "url(assets/images/face-animated.gif)");
-    //
-    // $("#face").toggleClass("active", "still");
+            // set new random audio as source
+            audio.src = currentAudio;
 
-        $("#face").mouseover(function() {
-      $("#face").addClass("active");
-    });
+            // and then play it
+            audio.currentTime = 0; //to make sure it is reset
+            audio.play();
+        }
 
-    $("#face").mouseleave(function() {
-      $("#face").removeClass("active");
-    });
+    })
 
+    // check when audio is complete
+    audio.onended = function(){
 
-
-}
+        // reset isplaying
+        isPlaying = false;
+        //remove active class from face
+        face.removeClass('active');
+    };
