@@ -55,7 +55,8 @@ transition: transform 1s ease;
 
 	#face {
 		background-image: url('https://aplustardcrocodile.github.io/assets/images/Face-small.png') no-repeat;
-/* 		transition: transform .5s ease; */
+		width: 250px; height: 352px;
+		transition: transform .5s ease;
 
 	#face.active {
 		opacity:1;
